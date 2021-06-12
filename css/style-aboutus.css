@@ -1,0 +1,176 @@
+.about-us-hero {
+  height: 50vh;
+  background: linear-gradient(
+    rgba(195, 176, 145, 0.55),
+    rgba(245, 245, 220, 0.8)
+  );
+  font-size: 4em;
+  text-align: center;
+  padding-top: 8vh;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-wrapper {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    rgba(102, 221, 170, 0.5),
+    rgba(102, 221, 170, 0.05)
+  );
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.about-left-content > div {
+  background: linear-gradient(rgb(215, 223, 230), aliceblue);
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  text-align: center;
+}
+
+.about-left-content {
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  background: aliceblue;
+}
+
+.about-img img {
+  display: block;
+  width: 275px;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-left-content h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0 0 0;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.icons {
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.icons li {
+  list-style-type: none;
+  background: gray;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 1rem 0.25em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.icons li:hover {
+  background: aliceblue;
+  color: black;
+}
+
+.about-right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-right h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 20px;
+}
+
+.about-right p {
+  font-size: 2vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.buy-button {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 128, 1), rgba(0, 0, 128, 1));
+  padding: 40px;
+}
+
+.buy-content p {
+  font-size: 3vh;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.buy-btn .btn {
+  margin-top: 360px;
+  border: 1px solid white;
+  text-align: center;
+  background: none;
+  padding: 2vh 5vh;
+  font-size: 3vh;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  transition: 0.8s;
+  z-index: 10000;
+}
+
+.buy-btn .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  height: 180%;
+}
+
+.buy-btn .btn:hover::before {
+  height: 0%;
+}
+
+.btn:hover {
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

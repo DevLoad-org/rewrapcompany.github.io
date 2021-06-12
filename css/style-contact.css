@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15em;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#444, #777);
+  background-size: cover;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 4em;
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+.contact .content p {
+  font-weight: 300;
+  color: #fff;
+  font-size: 1em;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 30px;
+  background: none;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+  font-size: 2.5em;
+}
+
+.container .contactInfo .box .text p {
+  font-size: 1em;
+}
+
+.contactForm {
+  background: linear-gradient(#777, #444);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
