@@ -1,8 +1,8 @@
 .shop-hero {
   min-height: 50vh;
   background: linear-gradient(
-    rgba(153, 255, 153, 0.55),
-    rgba(153, 255, 153, 0.3)
+    rgba(39,77,99,0.7),
+    rgba(39,77,99,0.4)
   );
   text-align: center;
   padding-top: 5em;

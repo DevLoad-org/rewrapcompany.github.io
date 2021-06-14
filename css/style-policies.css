@@ -89,7 +89,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 200;
-    background-color: #87CEEB;
+    background-color: rgba(89,127,149,255);
 }
 
 .returns-shipping {

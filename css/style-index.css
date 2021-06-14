@@ -321,7 +321,6 @@
 .decompose input[type="radio"]:checked + .imgBx {
   z-index: 10;
   clip-path: circle(1000px at center);
-  transition-delay: 0.75s;
 }
 
 .decompose .imgBx img {

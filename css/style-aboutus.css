@@ -20,8 +20,8 @@
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(
-    rgba(102, 221, 170, 0.5),
-    rgba(102, 221, 170, 0.05)
+    rgba(39,77,99,0.4),
+    rgba(39,77,99,0.1)
   );
 }
 
@@ -117,7 +117,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(18, 37, 92);
+  background:rgba(39,77,99,255);
   padding: 40px;
 }
 
