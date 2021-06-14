@@ -18,7 +18,7 @@
 
     <!-- Style Sheets -->
     <link rel = "stylesheet" href = "css/styles.css">
-    <link rel = "stylesheet" href = "css/style-shop.css"
+    <link rel = "stylesheet" href = "css/style-shop.css">
     
     <!-- Scripts -->
     <script src = "scripts/navbar.js"></script>
@@ -53,7 +53,13 @@
       <h1>Shop</h1>
       <p>Shop for your favourite preloved styles!</p>
     </div>
-    <div class="collection" id = "Dupattas and Stoles">
+    <div class="shop-nav">
+      <a href = "#Dupattas"><p>Dupattas</p></a>
+      <a href = "#Fabrics"><p>Fabrics</p></a>
+      <a href = "#Saree"><p>Sarees</p></a>
+    </div>
+    <div class="collection" id = "Dupattas">
+      <h2 style = "font-family: 'Poppins', sans-serif; text-align: center; padding: 50px; text-decoration: underline;">Dupattas</h2>
       <div id='collection-component-1623421720519'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -403,6 +409,7 @@
     </div>
     <hr>
   <div class="collection" id = "Fabrics">
+    <h2 style = "font-family: 'Poppins', sans-serif; text-align: center; padding: 50px; text-decoration: underline;">Fabrics</h2>
     <div id='collection-component-1623421776053'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -751,7 +758,8 @@
 </script>
   </div>
   <hr>
-  <div class="collection" id = "Saree - Cotton">
+  <div class="collection" id = "Saree">
+    <h2 style = "font-family: 'Poppins', sans-serif; text-align: center; padding: 50px; text-decoration: underline;">Sarees</h2>
     <div id='collection-component-1623422026805'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -1797,6 +1805,30 @@
 /*]]>*/
 </script>
   </div>
+  <!--Scroll to top button-->
+    <!--Implemented from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp and  https://youtu.be/FK5DEa1Hvco-->
+    <button id="scroll">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </button>
+    <script>
+      const btnScroll = document.querySelector("#scroll");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          btnScroll.style.display = "block";
+        } else {
+          btnScroll.style.display = "none";
+        }
+      }
+
+      btnScroll.addEventListener("click", function() {
+        $("html, body").animate({scrollTop:0}, "slow");
+      });
+    </script>
   </body>
 
   <!-- FOOTER -->
@@ -1820,6 +1852,7 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     

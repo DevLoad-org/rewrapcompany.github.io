@@ -31,3 +31,57 @@
 .collection {
   padding-top: 30px;
 }
+
+
+#scroll {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#scroll:hover {
+  background: #cc2333;
+  opacity: 1;
+}
+
+.shop-nav
+{
+  min-height: 25vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-nav a
+{
+  text-decoration: none;
+  padding: 2em;
+}
+
+.shop-nav p
+{
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: lightgray;
+}
+
+.shop-nav a:hover p
+{
+  color: black;
+}
