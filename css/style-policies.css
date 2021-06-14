@@ -1,3 +1,7 @@
+*{
+    font-family:'Poppins',sans-serif;
+}
+
 .title-name {
     text-transform: uppercase;
     text-align: center;
@@ -7,7 +11,7 @@
     font-weight: 700;
     height: 10vh;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins',sans-serif;
 }
 
 .sub-title {
