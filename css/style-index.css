@@ -79,6 +79,7 @@
   align-items: center;
   padding: 20px;
   flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
 }
 
 .card {
@@ -91,12 +92,14 @@
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
+  font-family: "Poppins", sans-serif;
 }
 
 .call-to-action:hover .card {
   filter: blur(20px);
   transform: scale(0.9);
   opacity: 0.5;
+  font-family: "Poppins", sans-serif;
 }
 
 .call-to-action .card:hover {
@@ -116,7 +119,7 @@
 
 .card .circle h2 {
   color: #fff;
-  font-size: 3em;
+  font-size: 2.5em;
   padding: 40px 0;
 }
 
@@ -133,6 +136,7 @@
 }
 
 .buy-sell {
+  font-family: "Poppins", sans-serif;
   min-height: 50vh;
   display: flex;
   justify-content: center;
@@ -152,6 +156,7 @@
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
 }
 
 .content {
@@ -163,10 +168,13 @@
   padding-top: 20%;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: black;
 }
 
 .content h2 {
-  font-size: 2.75em;
+  font-size: 2.5em;
+  color: black;
 }
 
 .cont .btn1,
@@ -189,25 +197,22 @@
   font-size: 24px;
   letter-spacing: 2px;
   border-radius: 40px;
-  background-image: linear-gradient(to left, #12cbc4, #2874ff, #12cbc4);
-  background-size: 200%;
+  border: 2px solid black;
   transition: 1.2s;
-}
-
-.cont .btn2 a {
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .cont .btn2 a:hover {
   background-position: right;
   text-decoration: none;
-  text-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+  text-shadow: 0 15px 15px rgba(0, 0, 0, 1);
 }
 
 .cont .btn1 a:hover {
   background-position: right;
   text-decoration: none;
-  text-shadow: 0 15px 25px rgba(0, 0, 0, 2);
+  text-shadow: 0 15px 15px rgba(0, 0, 0, 2);
 }
 
 .contents {
@@ -254,6 +259,7 @@
 .slider-text4,
 .slider-text5 {
   background-color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 @keyframes slide {
@@ -316,11 +322,13 @@
   transition-delay: 0s;
   z-index: 1;
   clip-path: circle(0px at center);
+  font-family: "Poppins", sans-serif;
 }
 
 .decompose input[type="radio"]:checked + .imgBx {
   z-index: 10;
   clip-path: circle(1000px at center);
+  transition-delay: 0.75s;
 }
 
 .decompose .imgBx img {
@@ -330,8 +338,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(6px);
-  -webkit-filter: blur(6px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .decompose .imgBx .decompose-content {
@@ -342,7 +350,7 @@
 }
 
 .decompose .imgBx .decompose-content h2 {
-  font-size: 5.5em;
+  font-size: 4.5em;
   line-height: 1em;
   color: #fff;
   padding: 5px;

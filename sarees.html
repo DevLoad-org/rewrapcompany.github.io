@@ -14,7 +14,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
     <!-- Style Sheets -->
     <link rel = "stylesheet" href = "css/styles.css">
@@ -38,9 +38,19 @@
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item"><a href="about_us.html" class="nav-link text-uppercase font-weight-bold">About Us</a></li>
-                  <li class="nav-item active"><a href="shop.html" class="nav-link text-uppercase font-weight-bold">Shop</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      SHOP
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="dupattas.html">Dupattas and Stoles</a>
+                      <a class="dropdown-item" href="sarees.html">Sarees</a>
+                      <a class="dropdown-item" href="fabrics.html">Fabric</a>
+                      <a class="dropdown-item" href="home.html">Home Accessories</a>
+                    </div>
+                  </li>
                   <li class="nav-item"><a href="policies.html" class="nav-link text-uppercase font-weight-bold">Policy</a></li>
+                  <li class="nav-item"><a href="about_us.html" class="nav-link text-uppercase font-weight-bold">About Us</a></li>
                   <li class="nav-item"><a href="contact_us.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
               </ul>
           </div>
@@ -50,691 +60,11 @@
 
   <body>
     <div class="shop-hero">
-      <h1>Shop</h1>
-      <p>Shop for your favourite preloved styles!</p>
+      <h1>Sarees</h1>
     </div>
-    <div class="shop-nav">
-      <a href = "#Dupattas"><p>Dupattas</p></a>
-      <a href = "#Fabrics"><p>Fabrics</p></a>
-      <a href = "#Saree"><p>Sarees</p></a>
-    </div>
-    <div class="collection" id = "Dupattas">
-      <h2 style = "font-family: 'Poppins', sans-serif; text-align: center; padding: 50px; text-decoration: underline;">Dupattas</h2>
-      <div id='collection-component-1623662641339'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'the-rewrap-store.myshopify.com',
-      storefrontAccessToken: 'bc95e622cf5b001e23612b28e5bdd734',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('collection', {
-        id: '269616709805',
-        node: document.getElementById('collection-component-1623662641339'),
-        moneyFormat: 'Rs.%20%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "calc(33.33333% - 30px)",
-          "margin-left": "30px",
-          "margin-bottom": "50px",
-          "width": "calc(33.33333% - 30px)"
-        },
-        "img": {
-          "height": "calc(100% - 15px)",
-          "position": "absolute",
-          "left": "0",
-          "right": "0",
-          "top": "0"
-        },
-        "imgWrapper": {
-          "padding-top": "calc(75% + 15px)",
-          "position": "relative",
-          "height": "0"
-        }
-      },
-      "title": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "20px",
-        "color": "#000000"
-      },
-      "button": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "18px",
-        "padding-top": "17px",
-        "padding-bottom": "17px",
-        ":hover": {
-          "background-color": "#25465c"
-        },
-        "background-color": "#294e66",
-        ":focus": {
-          "background-color": "#25465c"
-        },
-        "border-radius": "25px"
-      },
-      "quantityInput": {
-        "font-size": "18px",
-        "padding-top": "17px",
-        "padding-bottom": "17px"
-      },
-      "price": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "21px",
-        "color": "#000000"
-      },
-      "compareAt": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "17.849999999999998px",
-        "color": "#000000"
-      },
-      "unitPrice": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "17.849999999999998px",
-        "color": "#000000"
-      },
-      "description": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "16px"
-      }
-    },
-    "buttonDestination": "modal",
-    "contents": {
-      "options": false
-    },
-    "text": {
-      "button": "View Product"
-    },
-    "googleFonts": [
-      "Open Sans"
-    ]
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-30px"
-        }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "18px",
-        "padding-top": "17px",
-        "padding-bottom": "17px",
-        ":hover": {
-          "background-color": "#25465c"
-        },
-        "background-color": "#294e66",
-        ":focus": {
-          "background-color": "#25465c"
-        },
-        "border-radius": "25px"
-      },
-      "quantityInput": {
-        "font-size": "18px",
-        "padding-top": "17px",
-        "padding-bottom": "17px"
-      },
-      "title": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "bold",
-        "font-size": "29px",
-        "color": "#000000"
-      },
-      "price": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "20px",
-        "color": "#000000"
-      },
-      "compareAt": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "17px",
-        "color": "#000000"
-      },
-      "unitPrice": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "17px",
-        "color": "#000000"
-      },
-      "description": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "16px",
-        "color": "#000000"
-      }
-    },
-    "googleFonts": [
-      "Open Sans"
-    ],
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Open Sans, sans-serif",
-        "font-size": "18px",
-        "padding-top": "17px",
-        "padding-bottom": "17px",
-        ":hover": {
-          "background-color": "#25465c"
-        },
-        "background-color": "#294e66",
-        ":focus": {
-          "background-color": "#25465c"
-        },
-        "border-radius": "25px"
-      },
-      "title": {
-        "color": "#1b1717"
-      },
-      "header": {
-        "color": "#1b1717"
-      },
-      "lineItems": {
-        "color": "#1b1717"
-      },
-      "subtotalText": {
-        "color": "#1b1717"
-      },
-      "subtotal": {
-        "color": "#1b1717"
-      },
-      "notice": {
-        "color": "#1b1717"
-      },
-      "currency": {
-        "color": "#1b1717"
-      },
-      "close": {
-        "color": "#1b1717",
-        ":hover": {
-          "color": "#1b1717"
-        }
-      },
-      "empty": {
-        "color": "#1b1717"
-      },
-      "noteDescription": {
-        "color": "#1b1717"
-      },
-      "discountText": {
-        "color": "#1b1717"
-      },
-      "discountIcon": {
-        "fill": "#1b1717"
-      },
-      "discountAmount": {
-        "color": "#1b1717"
-      },
-      "cart": {
-        "background-color": "#d3d7d9"
-      },
-      "footer": {
-        "background-color": "#d3d7d9"
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "notice": "Shipping costs added at checkout.",
-      "button": "Checkout",
-      "noteDescription": "Any instructions or notes for us?"
-    },
-    "contents": {
-      "note": true
-    },
-    "googleFonts": [
-      "Open Sans"
-    ]
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Open Sans, sans-serif",
-        "background-color": "#294e66",
-        ":hover": {
-          "background-color": "#25465c"
-        },
-        ":focus": {
-          "background-color": "#25465c"
-        }
-      },
-      "count": {
-        "font-size": "18px"
-      }
-    },
-    "googleFonts": [
-      "Open Sans"
-    ]
-  },
-  "lineItem": {
-    "styles": {
-      "variantTitle": {
-        "color": "#1b1717"
-      },
-      "title": {
-        "color": "#1b1717"
-      },
-      "price": {
-        "color": "#1b1717"
-      },
-      "fullPrice": {
-        "color": "#1b1717"
-      },
-      "discount": {
-        "color": "#1b1717"
-      },
-      "discountIcon": {
-        "fill": "#1b1717"
-      },
-      "quantity": {
-        "color": "#1b1717"
-      },
-      "quantityIncrement": {
-        "color": "#1b1717",
-        "border-color": "#1b1717"
-      },
-      "quantityDecrement": {
-        "color": "#1b1717",
-        "border-color": "#1b1717"
-      },
-      "quantityInput": {
-        "color": "#1b1717",
-        "border-color": "#1b1717"
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-    </div>
-    <hr>
-  <div class="collection" id = "Fabrics">
-    <h2 style = "font-family: 'Poppins', sans-serif; text-align: center; padding: 50px; text-decoration: underline;">Fabrics</h2>
-    <div id='collection-component-1623662722079'></div>
-    <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          ShopifyBuyInit();
-        } else {
-          loadScript();
-        }
-      } else {
-        loadScript();
-      }
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: 'the-rewrap-store.myshopify.com',
-          storefrontAccessToken: 'bc95e622cf5b001e23612b28e5bdd734',
-        });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('collection', {
-            id: '269800439981',
-            node: document.getElementById('collection-component-1623662722079'),
-            moneyFormat: 'Rs.%20%7B%7Bamount%7D%7D',
-            options: {
-      "product": {
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "calc(33.33333% - 30px)",
-              "margin-left": "30px",
-              "margin-bottom": "50px",
-              "width": "calc(33.33333% - 30px)"
-            },
-            "img": {
-              "height": "calc(100% - 15px)",
-              "position": "absolute",
-              "left": "0",
-              "right": "0",
-              "top": "0"
-            },
-            "imgWrapper": {
-              "padding-top": "calc(75% + 15px)",
-              "position": "relative",
-              "height": "0"
-            }
-          },
-          "title": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "20px",
-            "color": "#000000"
-          },
-          "button": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "18px",
-            "padding-top": "17px",
-            "padding-bottom": "17px",
-            ":hover": {
-              "background-color": "#25465c"
-            },
-            "background-color": "#294e66",
-            ":focus": {
-              "background-color": "#25465c"
-            },
-            "border-radius": "25px"
-          },
-          "quantityInput": {
-            "font-size": "18px",
-            "padding-top": "17px",
-            "padding-bottom": "17px"
-          },
-          "price": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "21px",
-            "color": "#000000"
-          },
-          "compareAt": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "17.849999999999998px",
-            "color": "#000000"
-          },
-          "unitPrice": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "17.849999999999998px",
-            "color": "#000000"
-          },
-          "description": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "16px"
-          }
-        },
-        "buttonDestination": "modal",
-        "contents": {
-          "options": false
-        },
-        "text": {
-          "button": "View Product"
-        },
-        "googleFonts": [
-          "Open Sans"
-        ]
-      },
-      "productSet": {
-        "styles": {
-          "products": {
-            "@media (min-width: 601px)": {
-              "margin-left": "-30px"
-            }
-          }
-        }
-      },
-      "modalProduct": {
-        "contents": {
-          "img": false,
-          "imgWithCarousel": true,
-          "button": false,
-          "buttonWithQuantity": true
-        },
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "100%",
-              "margin-left": "0px",
-              "margin-bottom": "0px"
-            }
-          },
-          "button": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "18px",
-            "padding-top": "17px",
-            "padding-bottom": "17px",
-            ":hover": {
-              "background-color": "#25465c"
-            },
-            "background-color": "#294e66",
-            ":focus": {
-              "background-color": "#25465c"
-            },
-            "border-radius": "25px"
-          },
-          "quantityInput": {
-            "font-size": "18px",
-            "padding-top": "17px",
-            "padding-bottom": "17px"
-          },
-          "title": {
-            "font-family": "Helvetica Neue, sans-serif",
-            "font-weight": "bold",
-            "font-size": "29px",
-            "color": "#000000"
-          },
-          "price": {
-            "font-family": "Helvetica Neue, sans-serif",
-            "font-weight": "normal",
-            "font-size": "20px",
-            "color": "#000000"
-          },
-          "compareAt": {
-            "font-family": "Helvetica Neue, sans-serif",
-            "font-weight": "normal",
-            "font-size": "17px",
-            "color": "#000000"
-          },
-          "unitPrice": {
-            "font-family": "Helvetica Neue, sans-serif",
-            "font-weight": "normal",
-            "font-size": "17px",
-            "color": "#000000"
-          },
-          "description": {
-            "font-family": "Helvetica Neue, sans-serif",
-            "font-weight": "normal",
-            "font-size": "16px",
-            "color": "#000000"
-          }
-        },
-        "googleFonts": [
-          "Open Sans"
-        ],
-        "text": {
-          "button": "Add to cart"
-        }
-      },
-      "option": {},
-      "cart": {
-        "styles": {
-          "button": {
-            "font-family": "Open Sans, sans-serif",
-            "font-size": "18px",
-            "padding-top": "17px",
-            "padding-bottom": "17px",
-            ":hover": {
-              "background-color": "#25465c"
-            },
-            "background-color": "#294e66",
-            ":focus": {
-              "background-color": "#25465c"
-            },
-            "border-radius": "25px"
-          },
-          "title": {
-            "color": "#1b1717"
-          },
-          "header": {
-            "color": "#1b1717"
-          },
-          "lineItems": {
-            "color": "#1b1717"
-          },
-          "subtotalText": {
-            "color": "#1b1717"
-          },
-          "subtotal": {
-            "color": "#1b1717"
-          },
-          "notice": {
-            "color": "#1b1717"
-          },
-          "currency": {
-            "color": "#1b1717"
-          },
-          "close": {
-            "color": "#1b1717",
-            ":hover": {
-              "color": "#1b1717"
-            }
-          },
-          "empty": {
-            "color": "#1b1717"
-          },
-          "noteDescription": {
-            "color": "#1b1717"
-          },
-          "discountText": {
-            "color": "#1b1717"
-          },
-          "discountIcon": {
-            "fill": "#1b1717"
-          },
-          "discountAmount": {
-            "color": "#1b1717"
-          },
-          "cart": {
-            "background-color": "#d3d7d9"
-          },
-          "footer": {
-            "background-color": "#d3d7d9"
-          }
-        },
-        "text": {
-          "total": "Subtotal",
-          "notice": "Shipping costs added at checkout.",
-          "button": "Checkout",
-          "noteDescription": "Any instructions or notes for us?"
-        },
-        "contents": {
-          "note": true
-        },
-        "googleFonts": [
-          "Open Sans"
-        ]
-      },
-      "toggle": {
-        "styles": {
-          "toggle": {
-            "font-family": "Open Sans, sans-serif",
-            "background-color": "#294e66",
-            ":hover": {
-              "background-color": "#25465c"
-            },
-            ":focus": {
-              "background-color": "#25465c"
-            }
-          },
-          "count": {
-            "font-size": "18px"
-          }
-        },
-        "googleFonts": [
-          "Open Sans"
-        ]
-      },
-      "lineItem": {
-        "styles": {
-          "variantTitle": {
-            "color": "#1b1717"
-          },
-          "title": {
-            "color": "#1b1717"
-          },
-          "price": {
-            "color": "#1b1717"
-          },
-          "fullPrice": {
-            "color": "#1b1717"
-          },
-          "discount": {
-            "color": "#1b1717"
-          },
-          "discountIcon": {
-            "fill": "#1b1717"
-          },
-          "quantity": {
-            "color": "#1b1717"
-          },
-          "quantityIncrement": {
-            "color": "#1b1717",
-            "border-color": "#1b1717"
-          },
-          "quantityDecrement": {
-            "color": "#1b1717",
-            "border-color": "#1b1717"
-          },
-          "quantityInput": {
-            "color": "#1b1717",
-            "border-color": "#1b1717"
-          }
-        }
-      }
-    },
-          });
-        });
-      }
-    })();
-    /*]]>*/
-    </script>
-  </div>
-  <hr>
-  <div class="collection" id = "Saree">
-    <h2 style = "font-family: 'Poppins', sans-serif; text-align: center; padding: 50px; text-decoration: underline;">Sarees</h2>
-    <div id='collection-component-1623662765077'></div>
+
+    <div class="collection" style = "padding:  2vh;">
+        <div id='collection-component-1626953900873'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -763,7 +93,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
         id: '269617627309',
-        node: document.getElementById('collection-component-1623662765077'),
+        node: document.getElementById('collection-component-1626953900873'),
         moneyFormat: 'Rs.%20%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -799,11 +129,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -873,11 +203,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -933,11 +263,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -982,12 +312,6 @@
       },
       "discountAmount": {
         "color": "#1b1717"
-      },
-      "cart": {
-        "background-color": "#d3d7d9"
-      },
-      "footer": {
-        "background-color": "#d3d7d9"
       }
     },
     "text": {
@@ -1007,12 +331,12 @@
     "styles": {
       "toggle": {
         "font-family": "Open Sans, sans-serif",
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         }
       },
       "count": {
@@ -1067,10 +391,8 @@
 })();
 /*]]>*/
 </script>
-  </div>
-  <hr>
-  <div class="collection" id = "Saree - Party Collection">
-    <div id='collection-component-1623662798138'></div>
+    <hr>
+    <div id='collection-component-1626953929485'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -1099,7 +421,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
         id: '269620150445',
-        node: document.getElementById('collection-component-1623662798138'),
+        node: document.getElementById('collection-component-1626953929485'),
         moneyFormat: 'Rs.%20%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -1135,11 +457,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -1209,11 +531,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -1269,11 +591,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -1318,12 +640,6 @@
       },
       "discountAmount": {
         "color": "#1b1717"
-      },
-      "cart": {
-        "background-color": "#d3d7d9"
-      },
-      "footer": {
-        "background-color": "#d3d7d9"
       }
     },
     "text": {
@@ -1343,12 +659,12 @@
     "styles": {
       "toggle": {
         "font-family": "Open Sans, sans-serif",
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         }
       },
       "count": {
@@ -1403,10 +719,8 @@
 })();
 /*]]>*/
 </script>
-  </div>
-  <hr>
-  <div class="collection" id = "Saree - Silk">
-    <div id='collection-component-1623662878821'></div>
+<hr>
+<div id='collection-component-1626953948085'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -1435,7 +749,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
         id: '269619003565',
-        node: document.getElementById('collection-component-1623662878821'),
+        node: document.getElementById('collection-component-1626953948085'),
         moneyFormat: 'Rs.%20%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -1471,11 +785,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -1545,11 +859,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -1605,11 +919,11 @@
         "padding-top": "17px",
         "padding-bottom": "17px",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         "border-radius": "25px"
       },
@@ -1654,12 +968,6 @@
       },
       "discountAmount": {
         "color": "#1b1717"
-      },
-      "cart": {
-        "background-color": "#d3d7d9"
-      },
-      "footer": {
-        "background-color": "#d3d7d9"
       }
     },
     "text": {
@@ -1679,12 +987,12 @@
     "styles": {
       "toggle": {
         "font-family": "Open Sans, sans-serif",
-        "background-color": "#294e66",
+        "background-color": "#000000",
         ":hover": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         },
         ":focus": {
-          "background-color": "#25465c"
+          "background-color": "#000000"
         }
       },
       "count": {
@@ -1739,38 +1047,12 @@
 })();
 /*]]>*/
 </script>
-  </div>
-  <!--Scroll to top button-->
-    <!--Implemented from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp and  https://youtu.be/FK5DEa1Hvco-->
-    <button id="scroll">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-      </svg>
-    </button>
-    <script>
-      const btnScroll = document.querySelector("#scroll");
-
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          btnScroll.style.display = "block";
-        } else {
-          btnScroll.style.display = "none";
-        }
-      }
-
-      btnScroll.addEventListener("click", function() {
-        $("html, body").animate({scrollTop:0}, "slow");
-      });
-    </script>
+    </div>
   </body>
 
   <!-- FOOTER -->
-  <div class="footer-basic" style = "background: linear-gradient(
-    rgba(39,77,99,0.7),
-    rgba(39,77,99,1)
-  );">
+  <hr>
+  <div class="footer-basic">
     <footer>
         <div class="social"><a href="https://www.instagram.com/therewrapcompany/"><i class="icon ion-social-instagram"></i></a><a href = "https://www.facebook.com/The-Rewrap-Company-102102725350663/?ref=py_c"><i class="icon ion-social-facebook"></i></a></div>
         <ul class="list-inline">
@@ -1787,7 +1069,6 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     

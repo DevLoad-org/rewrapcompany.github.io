@@ -19,10 +19,6 @@
 .about-wrapper {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(
-    rgba(39,77,99,0.4),
-    rgba(39,77,99,0.1)
-  );
 }
 
 .about-left {
@@ -117,7 +113,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background:rgba(39,77,99,255);
+  background: black;
   padding: 40px;
 }
 
@@ -131,7 +127,6 @@
 
 .buy-btn .btn {
   margin-top: 360px;
-  border: 1px solid white;
   text-align: center;
   background: none;
   padding: 2vh 5vh;
@@ -140,7 +135,7 @@
   margin: 10px;
   position: relative;
   overflow: hidden;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: 0.8s;
   z-index: 10000;
@@ -152,7 +147,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
+  background: white;
   z-index: -1;
   transition: 0.8s;
   top: 0;

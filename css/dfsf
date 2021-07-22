@@ -1,0 +1,152 @@
+#heading, #why-text {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #why-text {
+      font-weight: lighter;
+  }
+
+  .shop-sell-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #carousel-info {
+      height: 7vh;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  .content {
+      width: 100vw;
+      height: 22vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+  }
+
+  .slider-wrapper {
+      font-size: x-large;
+      color: white;
+      font-weight: lighter;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  .slider {
+      height: 50px;
+      overflow: hidden;
+
+  }
+
+  .slider div {
+      height: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      box-sizing: border-box;
+      padding-top: 7px;
+  }
+
+.slider-text1 {
+    background-color: black;
+    animation: slide 13s linear infinite;
+}
+
+.slider-text2, .slider-text3, .slider-text4, .slider-text5 {
+    background-color: black;
+}
+
+@keyframes slide {
+    0% {margin-top: -500px;}
+    5% {margin-top: -400px;}
+    20% {margin-top: -400px;}
+    25% {margin-top: -300px;}
+    40% {margin-top: -300px;}
+    45% {margin-top: -200px;}
+    60% {margin-top: -200px;}
+    65% {margin-top: -100px;}
+    80% {margin-top: -100px;}
+    85% {margin-top: 0px;}
+    100% {margin-top: 0px;}
+}
+
+
+<div class="why"> 
+      <h2 id="heading">Why Rewrap? </h2> <br><br>
+      <h4 id="why-text">
+        The second most polluting industry in the world. BUY PRELOVED.<br><br><br>
+  
+        "Old" products get modified & rewrapped to a second life as they're turned into a "new" product.<br><br><br>
+  
+        We produce more than we consume - We consume more than we need.<br><br><br>
+  
+        Loved before - rewrap yourself in responsible fashion.<br><br><br>
+      </h4> <hr><br>
+
+      <h3 style="text-align: center; font-weight: bold;">Let's save our planet, together!</h3><br>
+      <h6 style="text-align: center;">Instead of always buying new, let's buy preloved and find fun in creating 
+        new styles with our used sarees and fabrics.</h6><br>
+      <div id="carousel-info" class="carousel slide" data-ride="carousel">
+        <h5>
+        <div class="carousel-inner" style="font-weight: 400;">
+          <div class="carousel-item active">
+            It takes 5 months for a coton shirt to decompose
+          </div>
+          <div class="carousel-item">
+            It takes about 20 to 200 years for polyester to decompose
+          </div>
+          <div class="carousel-item">
+            Sequins will not decompose
+          </div>
+          <div class="carousel-item">
+            It takes about a year for denim to decompose
+          </div>
+          <div class="carousel-item">
+            Wool takes up to 5 years to decompose
+          </div>
+        </div>
+      </div>
+      </h5><hr><br>
+
+      <h3>
+        <div class="shop-sell-link">
+          <div class="row">
+            <div class="col">
+              <a href="#">Shop</a>
+            </div>
+            <div class="col">
+              <a href="#">Sell</a>
+            </div>
+          </div>
+        </div>
+        </h3>
+      </div>
+  
+      <!-- Text Slide  -->
+      <div class="content">
+        <div class="slider-wrapper"> 
+          Rewrap &nbsp;
+          <div class="slider">
+            <div class="slider-text1">in tradition</div>
+            <div class="slider-text2">memories</div>
+            <div class="slider-text3">in comfort</div>
+            <div class="slider-text4">in style</div>
+            <div class="slider-text5">responsibly</div>
+          </div>
+        </div>
+      </div>
+  </body>

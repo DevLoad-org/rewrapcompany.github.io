@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,18 +13,174 @@
     <!-- Favicons CSS -->
     <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
     <!-- Style Sheets -->
     <link rel = "stylesheet" href = "css/styles.css">
-    <link rel = "stylesheet" href = "css/style-contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/style-shop.css">
     
     <!-- Scripts -->
     <script src = "scripts/navbar.js"></script>
 
-    <!-- META -->
-    <meta name = "viewport" content = "width= device-width, initial-scale = 1.0">
+    <script>
+        //function togglePopup(idname)
+    //{
+      //  document.getElementById(idname).classList.toggle("active");
+    //}
+    
+    // Set the date we're counting down to
+    var countDownDate = new Date("August 15, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      if (days <  10)
+      {
+        var strDays = "0" + days;
+      }
+      else
+      {
+        strDays = days;
+      }
+      if (hours < 10)
+      {
+        var strHours = "0" + hours;
+      }
+      else
+      {
+        strHours = hours;
+      }
+      if (minutes < 10)
+      {
+        var strMinutes = "0" + minutes;
+      }
+      else
+      {
+        strMinutes = minutes;
+      }
+      if (seconds < 10)
+      {
+        var strSeconds = "0" + seconds;
+      }
+      else 
+      {
+        strSeconds = seconds;
+      }
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("launch").innerHTML = strDays + " : " + strHours + " : "
+      + strMinutes + " : " + strSeconds;
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("launch").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    
+    </script>
+    
+    <style>
+
+    button
+  {
+      font-family: 'Fjalla One', sans-serif;
+      background: none;
+      border: 2px solid #000;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.4s linear;
+      padding: 12px 20px;
+      min-width: 75px;
+      margin: 10px;
+      position: relative;
+      margin-left: auto;
+      color: BLACK;
+  }
+
+  button:hover
+  {
+      color: #fff;
+  }
+
+  button::before
+  {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: -1;
+      transition: transform 0.5s;
+      transform-origin: 0 0;
+      transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+      transform: scaleY(0);
+  }
+
+  button:hover::before
+  {
+      transform: scaleY(1);
+  }
+
+    .comingsoon
+    {
+        top:50%;
+        left: 50%;
+        position:absolute;
+        transform: translate(-50%, -50%);
+        color: #000;
+        text-align:center;
+        z-index: 1;
+        font-family: 'POPPINS', sans-serif;
+        text-shadow: 3px 3px 6px #555;
+    }
+    
+    .comingsoon h1
+    {
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+    
+    .comingsoon hr
+    {
+        width: 50%;
+        margin: 20px auto;
+        border: 2px solid #000;
+    }
+    
+    
+    .blurredout
+    {
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+    }
+    
+    #launch
+    {
+        font-size: 30px;
+    }
+    
+    </style>
+    
+    
+    
 
     <link rel="icon" href="images/logo_white.png" type="image/icon type">
     <title>The Rewrap Company</title>
@@ -46,7 +204,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="dupattas.html">Dupattas and Stoles</a>
                       <a class="dropdown-item" href="sarees.html">Sarees</a>
-                      <a class="dropdown-item" href="fabrics.html">Fabric</a>
+                      <a class="dropdown-item" href="fabrics.html">Fabrics</a>
                       <a class="dropdown-item" href="home.html">Home Accessories</a>
                     </div>
                   </li>
@@ -60,49 +218,28 @@
   </header>
 
   <body>
-    <section class = "contact">
-        <div class="content">
-            <h2>Contact Us!</h2>
-            <br>
-            <p>If you have any queries, please feel free to contact us! We will try to respond to you as soon as possible. You can reach us through phone, email, or fill in the Google form embeded below.</p>
-        </div>
-        <div class="container">
-            <div class="contactInfo">
-                <div class="box">
-                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
-                        <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1H4.98zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374L3.81.563zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z"/>
-                      </svg></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>support@rewrap.store</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                      </svg></div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>+91-7904625398</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-    <div class="contactForm">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclyxnRfOCSSTrj8iLEovq4E-ROoXGVlaJp5PR-wk1-FSAJkg/viewform?embedded=true" width="640" height="937" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="comingsoon">
+        <h1>COMING SOON</h1>
+        <hr>
+            <p id = "launch"></p>
+            <a href = "index.html"><button>Go Back</button></a>
     </div>
-
+    
+    <div class="blurredout">
+    <div class="shop-hero">
+      <h1>Home Accessories</h1>
+    </div>
   </body>
 
   <!-- FOOTER -->
+  <hr>
   <div class="footer-basic">
     <footer>
         <div class="social"><a href="https://www.instagram.com/therewrapcompany/"><i class="icon ion-social-instagram"></i></a><a href = "https://www.facebook.com/The-Rewrap-Company-102102725350663/?ref=py_c"><i class="icon ion-social-facebook"></i></a></div>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="index.html">Home</a></li>
             <li class="list-inline-item"><a href="about_us.html">About Us</a></li>
-            <li class="list-inline-item"><a href="dupattas.html">Shop</a></li>
+            <li class="list-inline-item"><a href="shop.html">Shop</a></li>
             <li class="list-inline-item"><a href="policies.html">Policy</a></li>
             <li class="list-inline-item"><a href="contact_us.html">Contact</a></li>
         </ul>
@@ -110,10 +247,10 @@
         <!-- <p class="copyright">Company Name © 2018</p> -->
     </footer>
   </div>
+</div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
 </html>

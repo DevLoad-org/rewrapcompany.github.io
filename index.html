@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
     <!-- Style Sheets -->
     <link rel = "stylesheet" href = "css/styles.css">
@@ -22,6 +25,59 @@
     
     <!-- Scripts -->
     <script src = "scripts/navbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+              startTimer();
+        });
+
+      //TIMER
+      const radios = document.getElementsByName("slider-radio");
+var sec = 0;
+var stoptime = true;
+var count = 0;
+
+function startTimer() {
+  if (stoptime == true) {
+        stoptime = false;
+        timerCycle();
+    }
+}
+function stopTimer() {
+  if (stoptime == false) {
+    stoptime = true;
+  }
+}
+
+function timerCycle() {
+    if (stoptime == false) {
+    sec = parseInt(sec);
+
+    sec = sec + 1;
+    setTimeout("timerCycle()", 1000);
+    if (sec % 5 === 0)
+    {
+      for (var i = 0; i < radios.length; i++)
+      {
+        if (radios[i].checked == true)
+        {
+          radios[i].checked = false;
+          count = i + 1;
+          if (count == radios.length)
+          {
+            count = 0;
+            radios[0].checked = true;
+          }
+        }
+        if (i == count)
+        {
+          radios[i].checked = true;
+          break;
+        }
+      }
+    }
+  }
+}
+    </script>
 
     <link rel="icon" href="images/logo_white.png" type="image/icon type">
     <title>The Rewrap Company</title>
@@ -37,10 +93,20 @@
           </svg></button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item"><a href="about_us.html" class="nav-link text-uppercase font-weight-bold">About Us</a></li>
-                  <li class="nav-item"><a href="shop.html" class="nav-link text-uppercase font-weight-bold">Shop</a></li>
+                  <li class="nav-item"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      SHOP
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="dupattas.html">Dupattas and Stoles</a>
+                      <a class="dropdown-item" href="sarees.html">Sarees</a>
+                      <a class="dropdown-item" href="fabrics.html">Fabric</a>
+                      <a class="dropdown-item" href="home.html">Home Accessories</a>
+                    </div>
+                  </li>
                   <li class="nav-item"><a href="policies.html" class="nav-link text-uppercase font-weight-bold">Policy</a></li>
+                  <li class="nav-item"><a href="about_us.html" class="nav-link text-uppercase font-weight-bold">About Us</a></li>
                   <li class="nav-item"><a href="contact_us.html" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
               </ul>
           </div>
@@ -57,7 +123,7 @@
 
     <div class="hero">
       <img src = "images/logo_white.png" alt = "Logo">
-      <a href = "shop.html"><button> SHOP </button></a>
+      <a href = "dupattas.html"><button> SHOP </button></a>
     </div>
 
    
@@ -95,7 +161,7 @@
         <img src = "images/decompose-1.jpeg" alt = "Decompose Header">
         <div class="decompose-content">
           <h2>Why Rewrap?</h2>
-          <p>Click on the buttons below this text to find out how long it takes different fabrics to decompose. Save our planet and have fun creating new styles by shopping with what is already available! </p>
+          <p>Go through the following slides to find out how long it takes different fabrics to decompose. Save our planet and have fun creating new styles by shopping with what is already available! </p>
           </div>
       </div>
       <input type = "radio" name = "slider-radio">
@@ -141,15 +207,12 @@
     </div>
 
 
-    <div class="buy-sell" style = "background: linear-gradient(
-      rgba(195, 176, 145, 0.55),
-      rgba(245, 245, 220, 0.8)
-    );">
-      <div class="cont" style = "background:rgba(39,77,99,255)">
+    <div class="buy-sell" style = "background: linear-gradient(rgba(195,176,145,0.4), rgba(245, 245, 220,0.4)) ">
+      <div class="cont" style = "background: linear-gradient(rgba(50,205,50,0.6), rgba(255,255,0,0.6));">
         <div class="content"><h2>Want to buy preloved fabrics?</h2></div>
-        <div class="btn1"><a href = "shop.html">Shop</a></div>
+        <div class="btn1"><a href = "dupattas.html">Shop</a></div>
       </div>
-      <div class="cont" style = "background: rgba(39,77,99,255);">
+      <div class="cont" style = "background: linear-gradient(rgba(50,205,50,0.6), rgba(255,255,0,0.6));">
         <div class="content"><h2>Want to sell preloved fabrics?</h2></div>
         <div class="btn2"><a href = "contact_us.html">Sell</a></div>
       </div>
@@ -184,7 +247,7 @@
         <ul class="list-inline">
             <li class="list-inline-item"><a href="index.html">Home</a></li>
             <li class="list-inline-item"><a href="about_us.html">About Us</a></li>
-            <li class="list-inline-item"><a href="shop.html">Shop</a></li>
+            <li class="list-inline-item"><a href="dupattas.html">Shop</a></li>
             <li class="list-inline-item"><a href="policies.html">Policy</a></li>
             <li class="list-inline-item"><a href="contact_us.html">Contact</a></li>
         </ul>
