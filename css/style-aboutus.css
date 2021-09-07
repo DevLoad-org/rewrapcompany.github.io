@@ -1,9 +1,6 @@
 .about-us-hero {
   height: 50vh;
-  background: linear-gradient(
-    rgba(195, 176, 145, 0.55),
-    rgba(245, 245, 220, 0.8)
-  );
+  background: #eee;
   font-size: 4em;
   text-align: center;
   padding-top: 8vh;
