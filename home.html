@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,163 +22,6 @@
     
     <!-- Scripts -->
     <script src = "scripts/navbar.js"></script>
-
-    <script>
-        //function togglePopup(idname)
-    //{
-      //  document.getElementById(idname).classList.toggle("active");
-    //}
-    
-    // Set the date we're counting down to
-    var countDownDate = new Date("August 2, 2021 00:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      if (days <  10)
-      {
-        var strDays = "0" + days;
-      }
-      else
-      {
-        strDays = days;
-      }
-      if (hours < 10)
-      {
-        var strHours = "0" + hours;
-      }
-      else
-      {
-        strHours = hours;
-      }
-      if (minutes < 10)
-      {
-        var strMinutes = "0" + minutes;
-      }
-      else
-      {
-        strMinutes = minutes;
-      }
-      if (seconds < 10)
-      {
-        var strSeconds = "0" + seconds;
-      }
-      else 
-      {
-        strSeconds = seconds;
-      }
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("launch").innerHTML = strDays + " : " + strHours + " : "
-      + strMinutes + " : " + strSeconds;
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("launch").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-    
-    </script>
-    
-    <style>
-
-    button
-  {
-      font-family: 'Fjalla One', sans-serif;
-      background: none;
-      border: 2px solid #000;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: color 0.4s linear;
-      padding: 12px 20px;
-      min-width: 75px;
-      margin: 10px;
-      position: relative;
-      margin-left: auto;
-      color: BLACK;
-  }
-
-  button:hover
-  {
-      color: #fff;
-  }
-
-  button::before
-  {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      z-index: -1;
-      transition: transform 0.5s;
-      transform-origin: 0 0;
-      transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-      transform: scaleY(0);
-  }
-
-  button:hover::before
-  {
-      transform: scaleY(1);
-  }
-
-    .comingsoon
-    {
-        top:50%;
-        left: 50%;
-        position:absolute;
-        transform: translate(-50%, -50%);
-        color: #000;
-        text-align:center;
-        z-index: 1;
-        font-family: 'POPPINS', sans-serif;
-        text-shadow: 3px 3px 6px #555;
-    }
-    
-    .comingsoon h1
-    {
-        font-size: 50px;
-        letter-spacing: 10px;
-    }
-    
-    .comingsoon hr
-    {
-        width: 50%;
-        margin: 20px auto;
-        border: 2px solid #000;
-    }
-    
-    
-    .blurredout
-    {
-        filter: blur(20px);
-        -webkit-filter: blur(20px);
-    }
-    
-    #launch
-    {
-        font-size: 30px;
-    }
-    
-    </style>
-    
-    
-    
 
     <link rel="icon" href="images/logo_white.png" type="image/icon type">
     <title>The Rewrap Company</title>
@@ -218,16 +59,338 @@
   </header>
 
   <body>
-    <div class="comingsoon">
-        <h1>COMING SOON</h1>
-        <hr>
-            <p id = "launch"></p>
-            <a href = "index.html"><button>Go Back</button></a>
-    </div>
-    
-    <div class="blurredout">
     <div class="shop-hero">
       <h1>Home Accessories</h1>
+    </div>
+
+    <div class="collection" style = "padding:  2vh;">
+      <div id='collection-component-1631252256451'></div>
+      <script type="text/javascript">
+      /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'the-rewrap-store.myshopify.com',
+            storefrontAccessToken: 'bc95e622cf5b001e23612b28e5bdd734',
+          });
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('collection', {
+              id: '278301212845',
+              node: document.getElementById('collection-component-1631252256451'),
+              moneyFormat: 'Rs.%20%7B%7Bamount%7D%7D',
+              options: {
+        "product": {
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                "max-width": "calc(33.33333% - 30px)",
+                "margin-left": "30px",
+                "margin-bottom": "50px",
+                "width": "calc(33.33333% - 30px)"
+              },
+              "img": {
+                "height": "calc(100% - 15px)",
+                "position": "absolute",
+                "left": "0",
+                "right": "0",
+                "top": "0"
+              },
+              "imgWrapper": {
+                "padding-top": "calc(75% + 15px)",
+                "position": "relative",
+                "height": "0"
+              }
+            },
+            "title": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "20px",
+              "color": "#000000"
+            },
+            "button": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "18px",
+              "padding-top": "17px",
+              "padding-bottom": "17px",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              "background-color": "#000000",
+              ":focus": {
+                "background-color": "#000000"
+              },
+              "border-radius": "25px"
+            },
+            "quantityInput": {
+              "font-size": "18px",
+              "padding-top": "17px",
+              "padding-bottom": "17px"
+            },
+            "price": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "21px",
+              "color": "#000000"
+            },
+            "compareAt": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "17.849999999999998px",
+              "color": "#000000"
+            },
+            "unitPrice": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "17.849999999999998px",
+              "color": "#000000"
+            },
+            "description": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "16px"
+            }
+          },
+          "buttonDestination": "modal",
+          "contents": {
+            "options": false
+          },
+          "text": {
+            "button": "View Product"
+          },
+          "googleFonts": [
+            "Open Sans"
+          ]
+        },
+        "productSet": {
+          "styles": {
+            "products": {
+              "@media (min-width: 601px)": {
+                "margin-left": "-30px"
+              }
+            }
+          }
+        },
+        "modalProduct": {
+          "contents": {
+            "img": false,
+            "imgWithCarousel": true,
+            "button": false,
+            "buttonWithQuantity": true
+          },
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px"
+              }
+            },
+            "button": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "18px",
+              "padding-top": "17px",
+              "padding-bottom": "17px",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              "background-color": "#000000",
+              ":focus": {
+                "background-color": "#000000"
+              },
+              "border-radius": "25px"
+            },
+            "quantityInput": {
+              "font-size": "18px",
+              "padding-top": "17px",
+              "padding-bottom": "17px"
+            },
+            "title": {
+              "font-family": "Helvetica Neue, sans-serif",
+              "font-weight": "bold",
+              "font-size": "29px",
+              "color": "#000000"
+            },
+            "price": {
+              "font-family": "Helvetica Neue, sans-serif",
+              "font-weight": "normal",
+              "font-size": "20px",
+              "color": "#000000"
+            },
+            "compareAt": {
+              "font-family": "Helvetica Neue, sans-serif",
+              "font-weight": "normal",
+              "font-size": "17px",
+              "color": "#000000"
+            },
+            "unitPrice": {
+              "font-family": "Helvetica Neue, sans-serif",
+              "font-weight": "normal",
+              "font-size": "17px",
+              "color": "#000000"
+            },
+            "description": {
+              "font-family": "Helvetica Neue, sans-serif",
+              "font-weight": "normal",
+              "font-size": "16px",
+              "color": "#000000"
+            }
+          },
+          "googleFonts": [
+            "Open Sans"
+          ],
+          "text": {
+            "button": "Add to cart"
+          }
+        },
+        "option": {},
+        "cart": {
+          "styles": {
+            "button": {
+              "font-family": "Open Sans, sans-serif",
+              "font-size": "18px",
+              "padding-top": "17px",
+              "padding-bottom": "17px",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              "background-color": "#000000",
+              ":focus": {
+                "background-color": "#000000"
+              },
+              "border-radius": "25px"
+            },
+            "title": {
+              "color": "#1b1717"
+            },
+            "header": {
+              "color": "#1b1717"
+            },
+            "lineItems": {
+              "color": "#1b1717"
+            },
+            "subtotalText": {
+              "color": "#1b1717"
+            },
+            "subtotal": {
+              "color": "#1b1717"
+            },
+            "notice": {
+              "color": "#1b1717"
+            },
+            "currency": {
+              "color": "#1b1717"
+            },
+            "close": {
+              "color": "#1b1717",
+              ":hover": {
+                "color": "#1b1717"
+              }
+            },
+            "empty": {
+              "color": "#1b1717"
+            },
+            "noteDescription": {
+              "color": "#1b1717"
+            },
+            "discountText": {
+              "color": "#1b1717"
+            },
+            "discountIcon": {
+              "fill": "#1b1717"
+            },
+            "discountAmount": {
+              "color": "#1b1717"
+            }
+          },
+          "text": {
+            "total": "Subtotal",
+            "notice": "Shipping costs added at checkout.",
+            "button": "Checkout",
+            "noteDescription": "Any instructions or notes for us?"
+          },
+          "contents": {
+            "note": true
+          },
+          "googleFonts": [
+            "Open Sans"
+          ]
+        },
+        "toggle": {
+          "styles": {
+            "toggle": {
+              "font-family": "Open Sans, sans-serif",
+              "background-color": "#000000",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              ":focus": {
+                "background-color": "#000000"
+              }
+            },
+            "count": {
+              "font-size": "18px"
+            }
+          },
+          "googleFonts": [
+            "Open Sans"
+          ]
+        },
+        "lineItem": {
+          "styles": {
+            "variantTitle": {
+              "color": "#1b1717"
+            },
+            "title": {
+              "color": "#1b1717"
+            },
+            "price": {
+              "color": "#1b1717"
+            },
+            "fullPrice": {
+              "color": "#1b1717"
+            },
+            "discount": {
+              "color": "#1b1717"
+            },
+            "discountIcon": {
+              "fill": "#1b1717"
+            },
+            "quantity": {
+              "color": "#1b1717"
+            },
+            "quantityIncrement": {
+              "color": "#1b1717",
+              "border-color": "#1b1717"
+            },
+            "quantityDecrement": {
+              "color": "#1b1717",
+              "border-color": "#1b1717"
+            },
+            "quantityInput": {
+              "color": "#1b1717",
+              "border-color": "#1b1717"
+            }
+          }
+        }
+      },
+            });
+          });
+        }
+      })();
+      /*]]>*/
+      </script>
     </div>
   </body>
 
@@ -247,10 +410,10 @@
         <!-- <p class="copyright">Company Name © 2018</p> -->
     </footer>
   </div>
-</div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 </html>
