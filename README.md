@@ -42,7 +42,3 @@ As Shopify handles the backend, we were able to host our site on github pages. W
 The Rewrap Company is a company that aims to promote sustainablity and reusability of clothes - specifically traditional Indian clothing. They do this by 'rewrapping' old products into 'new' products. These products have been loved before, but now, they can be loved once again. Their vision is to upcycle preloved fabrics, thereby eliminating production waste. The Rewrap Company quickly realised that there were many who support the concept of upcycling, and they hope to spread this company to all those that care about the environment.
 
 ---
-
-## What is DevLoad?
-
-Devload is a business that specialises in web development. We aim to create clean, elegant and intuitive websites for our clients. Our goal at Devload is to not only build websites that suit the clients needs, but also to inspire other young people and students to take initiatives of their own, by sharing our journey on [our YouTube Channel](https://www.youtube.com/channel/UC86I6tEmKmfNEAgfwwnOYBA). You can find us at [our website](https://www.devload.org). We are open to create websites for anybody who needs one.
