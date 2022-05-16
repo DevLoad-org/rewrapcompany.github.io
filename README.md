@@ -1,9 +1,9 @@
 # [The Rewrap Company](https://www.rewrap.store)
 
-![Front Page](images/front_page.png)
-
 ## A minimalistic static site built with HTML, CSS, Bootstrap and Vanilla Javascript. Backend and dynamic components handled by Shopify.
 
+
+![Front Page](images/front_page.png)
 ---
 
 ## Built Using
